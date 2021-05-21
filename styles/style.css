@@ -35,15 +35,17 @@ body {
 }
 
 .search {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .search__form {
+  padding: 1rem;
   width: 80%;
   max-width: 40rem;
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 1px 1px 20px gray;
 }
 .search__form__input {
   align-self: stretch;
@@ -62,9 +64,12 @@ body {
 }
 .search__form__btn {
   border: none;
-  padding: 0.3rem 1.2rem;
+  min-width: 15rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px #111;
+  padding: 0.3rem 1.6rem;
   border-radius: 0.5rem;
-  background: #00ffc8;
+  background: #fc00e7;
   transition: transform 0.3s ease;
 }
 .search__form__btn:hover {
