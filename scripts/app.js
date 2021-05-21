@@ -4,13 +4,10 @@ const apiKey = "d618021a";
 const base = `http://www.omdbapi.com/?apikey=${apiKey}&plot=full&`;
 
 //function to close details
-const closeDetails = (el) => {
-  el.innerHTML = "See More...";
-};
+const closeDetails = el => el.innerHTML = "See More...";
 
 //function to update movie details
 const setMovieDetails = (element, data) => {
-  console.log(element, data.imdbID);
   let html = `
     <span class="results__list__item__details__heading">Genre</span>
     <span class="results__list__item__genre">${data.Genre}</span>
@@ -22,6 +19,7 @@ const setMovieDetails = (element, data) => {
     <span class="results__list__item__rating">${data.Ratings[0].Value}</span>
     <span class="results__list__item__details__heading">Duration</span>
     <span class="results__list__item__duration">${data.Runtime}</span>
+    <span class="results__list__item__details__heading">Plot</span>
     <span class="results__list__item__plot">${data.Plot}</span>
   `;
   

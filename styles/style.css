@@ -120,5 +120,14 @@ body {
   cursor: default;
 }
 .results__list__item__details__heading {
+  margin-top: 1rem;
   font-weight: bold;
+  font-size: 2.5rem;
+}
+.results__list__item__close {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.results__list__item__close:hover {
+  color: crimson;
 }/*# sourceMappingURL=style.css.map */
