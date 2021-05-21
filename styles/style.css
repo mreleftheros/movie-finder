@@ -48,8 +48,7 @@ body {
   box-shadow: 1px 1px 20px gray;
 }
 .search__form__input {
-  align-self: stretch;
-  flex: 1;
+  width: 80%;
   margin-bottom: 1rem;
   background: rgba(68, 68, 68, 0.5);
   color: #fff;
