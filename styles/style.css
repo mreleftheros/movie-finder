@@ -11,16 +11,25 @@ html {
 }
 
 body {
-  font-family: Helvetica, sans-serif;
-}
-
-body {
   background: rgba(0, 161, 235, 0.5);
   min-height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 @media only screen and (min-width: 768px) {
   body {
     background: linear-gradient(180deg, rgba(0, 161, 235, 0.5), transparent), url(../assets/movies-bg.jpg) no-repeat center;
     background-size: cover;
   }
+}
+
+.header {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__title {
+  font-size: 3rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px #111;
 }/*# sourceMappingURL=style.css.map */

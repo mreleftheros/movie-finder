@@ -5,11 +5,25 @@
 body {
   background: $basicTeal;
   min-height: 100vh;
+  font-family: "Poppins", sans-serif;
 
   @include mq(768px) {
     background: 
     linear-gradient(180deg,  $basicTeal, transparent),
     url(../assets/movies-bg.jpg) no-repeat center;
     background-size: cover;
+  }
+}
+
+.header {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px #111;
   }
 }
