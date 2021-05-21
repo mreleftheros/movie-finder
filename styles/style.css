@@ -1,0 +1,26 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background: rgba(0, 161, 235, 0.5);
+  min-height: 100vh;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    background: linear-gradient(180deg, rgba(0, 161, 235, 0.5), transparent), url(../assets/movies-bg.jpg) no-repeat center;
+    background-size: cover;
+  }
+}/*# sourceMappingURL=style.css.map */
