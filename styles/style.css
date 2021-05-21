@@ -105,4 +105,20 @@ body {
 .results__list__item__image {
   max-width: 100%;
   object-fit: cover;
+}
+.results__list__item__details {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+.results__list__item__details:hover {
+  color: crimson;
+  cursor: pointer;
+}
+.results__list__item__details > * {
+  color: #000;
+  cursor: default;
+}
+.results__list__item__details__heading {
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
