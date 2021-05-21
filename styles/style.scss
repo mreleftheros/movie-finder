@@ -30,6 +30,8 @@ body {
 
 .search {
   padding: .5rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 
   &__form {
     padding: 1rem;
@@ -70,6 +72,40 @@ body {
       &:hover {
         cursor: pointer;
         transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.results {
+  font-size: 2rem;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    max-width: 60rem;
+    margin: auto;
+
+    &__item {
+      padding: .5rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+      background: #fff;
+      border-radius: 1rem;
+
+      &__title {
+        font-weight: bold;
+        font-size: 3rem;
+      }
+
+      &__image {
+        max-width: 100%;
+        object-fit: cover;
       }
     }
   }

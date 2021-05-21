@@ -5,11 +5,12 @@ const base = `http://www.omdbapi.com/?apikey=${apiKey}&`;
 
 //function to update Movie list
 const setMovieResult = result => {
+  console.log(result)
   //create elements
   const liElement = document.createElement("li");
   const titleElement = document.createElement("span");
   const yearElement = document.createElement("span");
-  const imgElement = document.createElement("image");
+  const imgElement = new Image();
 
   //give classes and attributes
   liElement.setAttribute("imdb-id", result.imdbID);
@@ -17,17 +18,22 @@ const setMovieResult = result => {
   titleElement.classList.add("results__list__item__title");
   yearElement.classList.add("results__list__item__year");
   imgElement.classList.add("results__list__item__image");
-  imgElement.src = result.Poster;
-
+  
   //give content
-  titleElement.textContent = result.title;
-  yearElement.textContent = result.year;
-
+  titleElement.textContent = result.Title;
+  yearElement.textContent = result.Year;
+  imgElement.src = result.Poster;
+  
   //append elements
   liElement.appendChild(titleElement);
   liElement.appendChild(yearElement);
-  liElement.appendChild(imgElement);
-
+  
+  
+  //set img async
+  imgElement.onload = function() {
+    liElement.appendChild(imgElement);
+  }
+  
   //append to the DOM
   movieList.appendChild(liElement);
 };
