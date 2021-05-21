@@ -40,8 +40,11 @@ const setMovieResult = result => {
 
 //function to search movies
 const searchMovies = async(e) => {
+  //clear previous result
+  movieList.innerHTML = "";
+
   e.preventDefault();
-  const query = "s=";
+  const query = "plot=full&type=movie&s=";
   const searchValue = e.target.search.value;
 
   const response = await fetch(base + query + searchValue + "&page=3");
@@ -52,6 +55,8 @@ const searchMovies = async(e) => {
 
   //get the data to the function
   data.Search.forEach(result => setMovieResult(result));
+
+  
 };
 
 //events
