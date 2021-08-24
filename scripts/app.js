@@ -1,7 +1,7 @@
 const searchForm = document.getElementById("searchForm");
 const movieList = document.getElementById("movieList");
 const apiKey = "d618021a";
-const base = `http://www.omdbapi.com/?apikey=${apiKey}&plot=full&`;
+const base = `https://www.omdbapi.com/?apikey=${apiKey}&plot=full&`;
 
 //function to close details
 const closeDetails = el => el.innerHTML = "See More...";
@@ -108,8 +108,6 @@ const searchMovies = async(e) => {
 
   //get the data to the function
   data.Search.forEach(result => setMovieResult(result));
-
-  
 };
 
 //events

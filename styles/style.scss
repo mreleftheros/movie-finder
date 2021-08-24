@@ -10,8 +10,8 @@ body {
   @include mq(768px) {
     background: 
     linear-gradient(180deg,  $basicTeal, transparent),
-    url(../assets/movies-bg.jpg) repeat-y center;
-    // background-size: cover;
+    url(../assets/movies-bg.jpg) repeat center;
+    background-size: cover;
   }
 }
 
